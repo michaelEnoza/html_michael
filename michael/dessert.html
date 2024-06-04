@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Menu</title>
+</head>
+<body style = "background-color: bisque;">
+    
+    <div style="text-align: center;">
+        <a href="Menu.html"><button class="bt1">Main Dish</button></a>
+        <a href="Vegetables.html"><button class="bt1">Vegetables</button></a>
+        <button class="bt1">Dessert</button>
+        <a href="drinks.html"><button class="bt1">Drinks</button></a>
+        <a href="addons.html"><button class="bt1">Add ons</button></a>
+        </div>
+        <br><br>
+
+        <div class="contain">
+            <div class="img">
+                <p><img src="strawberry.jpg" style="width: 100px;height: 100px;"></p>
+                <br>
+                <p><img src="blue.jpg" style="width: 100px;height: 100px;"></p>
+                <br>
+                <p><img src="mouse.jpg" style="width: 100px;height: 100px;"></p>
+            </div>
+            <div class="style">
+                <p class="p1">Strawberry Crunch Poke Cake . . . . . . . . . Php 60.00</p>
+				<input type="checkbox"  name="main" id="cake" value="60.00">
+                <br><br><br>
+                <p class="p1">Lemon-Blueberry Mini Cheesecake Cupcake . . . . . . . .  Php 95.00</p>
+				<input type="checkbox"  name="main" id="cheese" value="95.00">
+                <br><br><br>
+                <p class="p1">Key Lime Pie Mousse . . . . . . . . . . Php 120.00</p>
+				<input type="checkbox"  name="main" id="key" value="120.00">
+                
+         
+                </div>
+                </div>
+				<div id="totalDisplay" style="padding-left: 25%;padding-top: 10px;font-weight: bold; font-size: 20px;">Total: 0</div>
+                <script src="menu.js"></script>
+
+    <style>
+        .bt1{
+            background-color:moccasin;
+            font-size: 40px;
+    margin-left: 20px;
+    
+        }
+        .p1{
+            font-size: 30px;
+            color: black;
+    
+        }
+    </style>
+    <style>
+        .contain{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .img{
+            max-width: 25%;
+            max-height: 35%;
+            padding-top: 12%;
+            float: left;
+        }
+        .style{
+            font: 30px;
+            padding-left: 20px;
+            padding-top: 200px;
+            float: left;
+        }
+        
+    </style>
+</body>
+</html>

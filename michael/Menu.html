@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Dish Menu</title>
+
+</head>
+<body style = "background-color: bisque;">
+
+<div style="text-align: center;">
+<button class="bt1">Main Dish</button>
+<a href="vegetables.html"><button class="bt1">Vegetables</button></a>
+<a href="dessert.html"><button class="bt1">Dessert</button></a>
+<a href="drinks.html"><button class="bt1">Drinks</button></a>
+<a href="addons.html"><button class="bt1">Add ons</button></a>
+</div>
+<br><br>
+<div class="contain">
+    
+    <br> <div class="img">
+        
+        <p><img src="teriyaki.jpg" style="width: 100px;height: 100px;"></p>
+		<br>
+        <p><img src="Adobo.jpg" style="width: 100px;height: 100px;"></p>
+		<br>
+        <p><img src="sinigang.jpg"style="width: 100px;height: 100px;"></p>
+		<br>
+        <p><img src="sisig.jpg"style="width: 100px;height: 100px;"></p>
+		<br>
+        <p><img src="kare.jpg"style="width: 100px;height: 100px;"></p>
+		<br>
+    </div>
+<div class="style">
+<p class="p1">Chicken Fillet Teriyaki . . . . . . . . . . . . . Php 365.00</p>
+<input type="checkbox" name="main" id="teriyaki" value="365.00">
+<br><br>
+<p class="p1">Chicken Adobo . . . . . . . . . . . . . . . . . . Php 200.00</p>
+<input type="checkbox"  name="main" id="adobo" value="200.00">
+<br><br>
+<p class="p1">Sinigang na Baboy . . . . . . . . . . . . . . . Php 300.00</p>
+<input type="checkbox" id="sinigang" name="main" value="300.00">
+<br><br>
+<p class="p1">Pork Sisig . . . . . . . . . . . . . . . . . . . . . Php 180.00</p>
+<input type="checkbox" id="sisig" name="main" value="180.00">
+<br><br>
+<p class="p1">Kare - Kare . . . . . . . . . . . . . . . . . . . . Php 165.00</p>
+<input type="checkbox" id="kare" name="main" value="165.00">
+</div>
+</div>
+<div id="totalDisplay" style="padding-left: 30%;font-weight: bold; font-size: 20px;">Total: 0</div>
+                <script src="menu.js"></script>
+
+
+<style>
+    .bt1{
+        background-color:moccasin;
+        font-size: 40px;
+margin-left: 20px;
+
+    }
+    .p1{
+        font-size: 30px;
+        color: black;
+		padding-top: 18px;
+		
+
+    }
+</style>
+<style>
+    .contain{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+		
+    }
+    .img{
+        max-width: 25%;
+        max-height: 35%;
+        padding-top: 80px;
+        float: left;
+    }
+    .style{
+        font: 30px;
+        padding-left: 20px;
+        
+        float: left;
+    }
+    
+   
+    
+</style>
+    
+</body>
+</html>
