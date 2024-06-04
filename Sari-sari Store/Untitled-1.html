@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sari - Sari Store</title>
+</head>
+<body style="background-color: rgb(241, 180, 65);">
+    <div class="header" style=" padding-right: 50%;
+    background-color:coral;
+">
+    <img style="width: 40%;height: 40%;" src ="Images/logo.png">
+    <h1 style="font-size: 70px;">Kel's Clothing</h1>
+</div>
+
+<h1 style="font-size: 40px;background-color: black;color: white; padding-left: 5%;display: block;">Types of items</h1>
+<div style="display: inline-block;width: 100%;height: auto;text-align: center;">
+<a href="#jeans"><button class="btn" >Jeans</button></a>
+<a href="#shirt"><button class="btn">T - Shirt</button></a>
+<a href="#perfume"><button class="btn">Perfume</button></a>
+<a href="#sando"><button class="btn">Sando</button></a>
+<a href="#toys"><button class="btn">Toys</button></div></a>
+<p class="item" id="jeans">Jeans</p>
+<div class="header">
+<div style="display: inline-block;text-align: center; margin: 50px;">
+    <img style="width: auto;height: 10rem; margin: 10px;" src="Images/jeans_1.webp" alt="jeans1">
+    <div><label class="stle" id="j1">Wide Leg Jeans</label>
+        <label> - Price: </label>
+        <label id="p1">500</label>
+    </div>
+    
+    <div >
+        <button id="btn1" onclick="button1()">-</button>
+    <input type="number" id="1" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button2()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t1">0</label>
+    </div>
+    
+
+    
+</div>
+    <div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/jeans_2.webp" alt="jeans2">
+    <div><label class="stle" id="j2">Mom Jeans</label>
+        <label> - Price: </label>
+        <label id="p2">250</label>
+        </div>
+    
+    <div >
+        <button id="btn1" onclick="button3()">-</button>
+    <input type="number" id="2" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button4()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t2">0</label>
+    </div>
+</div>
+<div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/jeans_3.jpg" alt="jeans3">
+    <div><label class="stle" id="j3">Middy Straight Jeans</label>
+    <label> - Price: </label>
+        <label id="p3">300</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button5()">-</button>
+    <input type="number" id="3" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button6()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t3">0</label>
+    </div>
+</div>
+<div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/jeans_4.webp" alt="jeans2">
+    <div><label class="stle" id="j4">Straight Regular Jeans</label>
+    <label> - Price: </label>
+        <label id="p4">400</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button7()">-</button>
+    <input type="number" id="4" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button8()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t4">0</label>
+    </div>
+</div>
+</div>
+<hr style="background-color: black;border: solid;">
+<p class="item" id="shirt">T - Shirt</p>
+<div class="header">
+<div style="display: inline-block;text-align: center; margin: 50px;">
+    <img style="width: auto;height: 10rem; margin: 10px;" src="Images/shirt1.jpg" alt="shirt1">
+    <div><label class="stle" id="j5">Black T - Shirt</label>
+    <label> - Price: </label>
+        <label id="p5">150</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button9()">-</button>
+    <input type="number" id="5" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button10()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t5">0</label>
+    </div>
+</div>
+    <div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/shirt2.jpg" alt="shirt2">
+    <div><label class="stle" id="j6">Customizable T - Shirt</label>
+    <label> - Price: </label>
+        <label id="p6">200</label>
+        </div>
+    
+    <div >
+        <button id="btn1" onclick="button11()">-</button>
+    <input type="number" id="6" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button12()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t6">0</label>
+    </div>
+
+</div>
+<div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/shirt3.jpg" alt="shirt3">
+    <div><label class="stle" id="j7">Strong T - Shirt</label>
+    <label> - Price: </label>
+        <label id="p7">350</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button13()">-</button>
+    <input type="number" id="7" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button14()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t7">0</label>
+    </div>
+</div>
+<div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/shirt4.webp" alt="shirt4">
+    <div><label class="stle" id="j8">Whale T - Shirt</label>
+    <label> - Price: </label>
+        <label id="p8">500</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button15()">-</button>
+    <input type="number" id="8" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button16()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t8">0</label>
+    </div>
+</div>
+</div>
+<hr style="background-color: black;border: solid;">
+<p class="item" id="perfume">Perfume</p>
+<div class="header">
+<div style="display: inline-block;text-align: center; margin: 50px;">
+    <img style="width: auto;height: 10rem; margin: 10px;" src="Images/perfume1.jpg" alt="perfume1">
+    <div><label class="stle" id="j9">Secret Garden</label>
+    <label> - Price: </label>
+        <label id="p9">2000</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button17()">-</button>
+    <input type="number" id="9" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button18()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t9">0</label>
+    </div>
+    
+</div>
+    <div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/perfume2.webp" alt="perfume2">
+    <div><label class="stle" id="j10">Ariana Grande Sweet like Candy</label>
+    <label> - Price: </label>
+        <label id="p10">5000</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button19()">-</button>
+    <input type="number" id="10" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button20()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t10">0</label>
+    </div>
+</div>
+<div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/perfume3.jpg" alt="perfume3">
+    <div><label class="stle" id="j11">Sweet Night Signature</label>
+    <label> - Price: </label>
+        <label id="p11">500</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button21()">-</button>
+    <input type="number" id="11" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button22()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t11">0</label>
+    </div>
+</div>
+<div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/perfume4.jpg" alt="perfume4">
+    <div><label class="stle" id="j12">Spicy Floral  Perfume</label>
+    <label> - Price: </label>
+        <label id="p12">1000</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button23()">-</button>
+    <input type="number" id="12" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button24()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t12">0</label>
+    </div>
+</div>
+</div>
+<hr style="background-color: black;border: solid;">
+<p class="item" id="sando">Sando</p>
+<div class="header">
+<div style="display: inline-block;text-align: center; margin: 50px;">
+    <img style="width: auto;height: 10rem; margin: 10px;" src="Images/sando1.jpg" alt="sando1">
+    <div><label class="stle" id="j13">Bleed Vneck Sando</label>
+    <label> - Price: </label>
+        <label id="p13">120</label></div>
+    
+    
+    <div >
+        <button id="btn1" onclick="button25()">-</button>
+    <input type="number" id="13" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button26()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t13">0</label>
+    </div>
+</div>
+    <div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/sando2.jpg" alt="sando2">
+    <div><label class="stle" id="j14">Sando-PNS-04</label>
+    <label> - Price: </label>
+        <label id="p14">150</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button27()">-</button>
+    <input type="number" id="14" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button28()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t14">0</label>
+    </div>
+</div>
+<div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/sando3.jpg" alt="sando3">
+    <div><label class="stle" id="j15">Sando Black and White Concept</label>
+    <label> - Price: </label>
+        <label id="p15">90</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button29()">-</button>
+    <input type="number" id="15" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button30()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t15">0</label>
+    </div>
+</div>
+<div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/sando4.jpg" alt="sand04">
+    <div><label class="stle" id="j16">Sando-PNS-16</label>
+    <label> - Price: </label>
+        <label id="p16">250</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button31()">-</button>
+    <input type="number" id="16" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button32()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t16">0</label>
+    </div>
+</div>
+</div>
+<hr style="background-color: black; border: solid;">
+<p class="item" id="toys">Toys</p>
+<div class="header">
+<div style="display: inline-block;text-align: center; margin: 50px;">
+    <img style="width: auto;height: 10rem; margin: 10px;" src="Images/toy1.jpg" alt="toy1">
+    <div><label class="stle" id="j17">Learning Walker</label>
+    <label> - Price: </label>
+        <label id="p17">1000</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button33()">-</button>
+    <input type="number" id="17" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button34()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t17">0</label>
+    </div>
+    
+</div>
+    <div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/toy2.jpg" alt="toy2">
+    <div><label class="stle" id="j18">Doll</label>
+    <label> - Price: </label>
+        <label id="p18">200</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button35()">-</button>
+    <input type="number" id="18" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button36()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t18">0</label>
+    </div>
+</div>
+<div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/toy3.jpg" alt="toy3">
+    <div><label class="stle" id="j19">Ball</label>
+    <label> - Price: </label>
+        <label id="p19">100</label></div>
+   
+    <div >
+        <button id="btn1" onclick="button37()">-</button>
+    <input type="number" id="19" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button38()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t19">0</label>
+    </div>
+</div>
+<div style="display: inline-block;text-align: center;margin: 50px;">
+    <img style="width: auto;height: 10rem;margin: 10px;" src="Images/toy4.jpg" alt="toy4">
+    <div><label class="stle" id="j20">Teddy Bear</label>
+    <label> - Price: </label>
+        <label id="p20">250</label></div>
+    
+    <div >
+        <button id="btn1" onclick="button39()">-</button>
+    <input type="number" id="20" value="0" style="width: 2rem;text-align: center;" >
+    <button id="btn2" onclick="button40()">+</button>
+    </div>
+    <div style="display: inline-block;margin-top: 5px;">
+        <label class="des">Total: </label>
+    <label id="t20">0</label>
+    </div>
+</div>
+</div>
+<hr style="background-color: black;border: solid;">
+<div style="display: inline-block;width: 100%; height: auto;text-align: center;"><button class="btn" onclick="btn()">Add to Order</button>
+<button class="btn" onclick="cleck()">Print the Receipt</button>
+
+<a href="stocks.html"><button class="btn">Stocks</button></a>
+</div>
+
+
+
+
+
+
+
+<script>
+   function button1(){
+    let num = document.getElementById('1').value;
+
+    document.getElementById('1').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('1').value= '0';
+       
+    }
+}
+function button2(){
+    let num = document.getElementById('1').value;
+    document.getElementById('1').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt',document.getElementById('j1').innerText) ;
+}
+
+function button3(){
+    let num = document.getElementById('2').value;
+
+    document.getElementById('2').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('2').value= '0';
+    }
+}
+function button4(){
+    let num = document.getElementById('2').value;
+    document.getElementById('2').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt1',document.getElementById('j2').innerText) ;
+}
+
+function button5(){
+    let num = document.getElementById('3').value;
+
+    document.getElementById('3').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('3').value= '0';
+    }
+}
+function button6(){
+    let num = document.getElementById('3').value;
+    document.getElementById('3').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt2',document.getElementById('j3').innerText) ;
+}
+
+function button7(){
+    let num = document.getElementById('4').value;
+
+    document.getElementById('4').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('4').value= '0';
+    }
+}
+function button8(){
+    let num = document.getElementById('4').value;
+    document.getElementById('4').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt3',document.getElementById('j4').innerText) ;
+}
+
+
+
+function button9(){
+    let num = document.getElementById('5').value;
+
+    document.getElementById('5').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('5').value= '0';
+    }
+}
+function button10(){
+    let num = document.getElementById('5').value;
+    document.getElementById('5').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt4',document.getElementById('j5').innerText) ;
+}
+
+function button11(){
+    let num = document.getElementById('6').value;
+
+    document.getElementById('6').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('6').value= '0';
+    }
+}
+function button12(){
+    let num = document.getElementById('6').value;
+    document.getElementById('6').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt5',document.getElementById('j6').innerText) ;
+}
+
+function button13(){
+    let num = document.getElementById('7').value;
+
+    document.getElementById('7').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('7').value= '0';
+    }
+}
+function button14(){
+    let num = document.getElementById('7').value;
+    document.getElementById('7').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt6',document.getElementById('j7').innerText) ;
+}
+
+function button15(){
+    let num = document.getElementById('8').value;
+
+    document.getElementById('8').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('8').value= '0';
+    }
+}
+function button16(){
+    let num = document.getElementById('8').value;
+    document.getElementById('8').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt7',document.getElementById('j8').innerText) ;
+}
+
+
+
+function button17(){
+    let num = document.getElementById('9').value;
+
+    document.getElementById('9').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('9').value= '0';
+    }
+}
+function button18(){
+    let num = document.getElementById('9').value;
+    document.getElementById('9').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt8',document.getElementById('j9').innerText) ;
+}
+
+function button19(){
+    let num = document.getElementById('10').value;
+
+    document.getElementById('10').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('10').value= '0';
+    }
+}
+function button20(){
+    let num = document.getElementById('10').value;
+    document.getElementById('10').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt9',document.getElementById('j10').innerText) ;
+}
+
+function button21(){
+    let num = document.getElementById('11').value;
+
+    document.getElementById('11').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('11').value= '0';
+    }
+}
+function button22(){
+    let num = document.getElementById('11').value;
+    document.getElementById('11').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt10',document.getElementById('j11').innerText) ;
+}
+
+function button23(){
+    let num = document.getElementById('12').value;
+
+    document.getElementById('12').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('12').value= '0';
+    }
+}
+function button24(){
+    let num = document.getElementById('12').value;
+    document.getElementById('12').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt11',document.getElementById('j12').innerText) ;
+}
+
+
+function button25(){
+    let num = document.getElementById('13').value;
+
+    document.getElementById('13').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('13').value= '0';
+    }
+}
+function button26(){
+    let num = document.getElementById('13').value;
+    document.getElementById('13').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt12',document.getElementById('j13').innerText) ;
+}
+
+function button27(){
+    let num = document.getElementById('14').value;
+
+    document.getElementById('14').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('14').value= '0';
+    }
+}
+function button28(){
+    let num = document.getElementById('14').value;
+    document.getElementById('14').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt13',document.getElementById('j14').innerText) ;
+}
+
+function button29(){
+    let num = document.getElementById('15').value;
+
+    document.getElementById('15').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('15').value= '0';
+    }
+}
+function button30(){
+    let num = document.getElementById('15').value;
+    document.getElementById('15').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt14',document.getElementById('j15').innerText) ;
+}
+
+function button31(){
+    let num = document.getElementById('16').value;
+
+    document.getElementById('16').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('16').value= '0';
+    }
+}
+function button32(){
+    let num = document.getElementById('16').value;
+    document.getElementById('16').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt15',document.getElementById('j16').innerText) ;
+}
+
+
+function button33(){
+    let num = document.getElementById('17').value;
+
+    document.getElementById('17').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('17').value= '0';
+    }
+}
+function button34(){
+    let num = document.getElementById('17').value;
+    document.getElementById('17').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt16',document.getElementById('j17').innerText) ;
+}
+
+function button35(){
+    let num = document.getElementById('18').value;
+
+    document.getElementById('18').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('18').value= '0';
+    }
+}
+function button36(){
+    let num = document.getElementById('18').value;
+    document.getElementById('18').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt17',document.getElementById('j18').innerText) ;
+}
+
+function button37(){
+    let num = document.getElementById('19').value;
+
+    document.getElementById('19').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('19').value= '0';
+    }
+}
+function button38(){
+    let num = document.getElementById('19').value;
+    document.getElementById('19').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt18',document.getElementById('j19').innerText) ;
+}
+
+function button39(){
+    let num = document.getElementById('20').value;
+
+    document.getElementById('20').value = parseInt(num)- 1;
+    if((num)<= 0 ){
+       document.getElementById('20').value= '0';
+    }
+}
+function button40(){
+    let num = document.getElementById('20').value;
+    document.getElementById('20').value = parseInt(num)+ + +1;
+    localStorage.setItem('receipt19',document.getElementById('j20').innerText) ;
+}
+
+function cleck(){
+    let totalSum = 0;
+for(let i =1; i<=20; i++){
+    let text = document.getElementById('t'+i).innerText;
+    totalSum += parseInt(text);
+}
+   alert(localStorage.getItem('receipt') +' - '+ document.getElementById('t1').innerText + '\n'+
+   localStorage.getItem('receipt1') +' - '+ document.getElementById('t2').innerText +'\n'+
+   localStorage.getItem('receipt2') +' - '+ document.getElementById('t3').innerText +'\n'+
+   localStorage.getItem('receipt3') +' - '+ document.getElementById('t4').innerText +'\n'+
+   localStorage.getItem('receipt4') +' - '+ document.getElementById('t5').innerText +'\n'+
+   localStorage.getItem('receipt5') +' - '+ document.getElementById('t6').innerText +'\n'+
+   localStorage.getItem('receipt6') +' - '+ document.getElementById('t7').innerText +'\n'+
+   localStorage.getItem('receipt7') +' - '+ document.getElementById('t8').innerText +'\n'+
+   localStorage.getItem('receipt8') +' - '+ document.getElementById('t9').innerText +'\n'+
+   localStorage.getItem('receipt9') +' - '+ document.getElementById('t10').innerText +'\n'+
+   localStorage.getItem('receipt10') +' - '+ document.getElementById('t11').innerText +'\n'+
+   localStorage.getItem('receipt11') +' - '+ document.getElementById('t12').innerText +'\n'+
+   localStorage.getItem('receipt12') +' - '+ document.getElementById('t13').innerText +'\n'+
+   localStorage.getItem('receipt13') +' - '+ document.getElementById('t14').innerText +'\n'+
+   localStorage.getItem('receipt14') +' - '+ document.getElementById('t15').innerText +'\n'+
+   localStorage.getItem('receipt15') +' - '+ document.getElementById('t16').innerText +'\n'+
+   localStorage.getItem('receipt16') +' - '+ document.getElementById('t17').innerText +'\n'+
+   localStorage.getItem('receipt17') +' - '+ document.getElementById('t18').innerText +'\n'+
+   localStorage.getItem('receipt18') +' - '+ document.getElementById('t19').innerText +'\n'+
+   localStorage.getItem('receipt19') +' - '+ document.getElementById('t20').innerText+
+   '\n'+'\n'+
+   
+   'Total Amount: ' + totalSum
+   
+);
+if(document.getElementById('t1').innerText > 0){
+    document.getElementById('t1').innerHTML = '0';
+    document.getElementById('1').value = 0;
+}if(document.getElementById('t2').innerText > 0){
+    document.getElementById('t2').innerHTML = '0';
+    document.getElementById('2').value = 0;
+}
+if(document.getElementById('t3').innerText > 0){
+    document.getElementById('t3').innerHTML = '0';
+    document.getElementById('3').value = 0;
+}
+if(document.getElementById('t4').innerText > 0){
+    document.getElementById('t4').innerHTML = '0';
+    document.getElementById('4').value = 0;
+}
+if(document.getElementById('t5').innerText > 0){
+    document.getElementById('t5').innerHTML = '0';
+    document.getElementById('5').value = 0;
+}
+if(document.getElementById('t6').innerText > 0){
+    document.getElementById('t6').innerHTML = '0';
+    document.getElementById('6').value = 0;
+}
+if(document.getElementById('t7').innerText > 0){
+    document.getElementById('t7').innerHTML = '0';
+    document.getElementById('7').value = 0;
+}
+if(document.getElementById('t8').innerText > 0){
+    document.getElementById('t8').innerHTML = '0';
+    document.getElementById('8').value = 0;
+}
+if(document.getElementById('t9').innerText > 0){
+    document.getElementById('t9').innerHTML = '0';
+    document.getElementById('9').value = 0;
+}
+if(document.getElementById('t10').innerText > 0){
+    document.getElementById('t10').innerHTML = '0';
+    document.getElementById('10').value = 0;
+}
+if(document.getElementById('t11').innerText > 0){
+    document.getElementById('t11').innerHTML = '0';
+    document.getElementById('11').value = 0;
+}
+if(document.getElementById('t12').innerText > 0){
+    document.getElementById('t12').innerHTML = '0';
+    document.getElementById('12').value = 0;
+}
+if(document.getElementById('t13').innerText > 0){
+    document.getElementById('t13').innerHTML = '0';
+    document.getElementById('13').value = 0;
+}
+if(document.getElementById('t14').innerText > 0){
+    document.getElementById('t14').innerHTML = '0';
+    document.getElementById('14').value = 0;
+}
+if(document.getElementById('t15').innerText > 0){
+    document.getElementById('t15').innerHTML = '0';
+    document.getElementById('15').value = 0;
+}
+if(document.getElementById('t16').innerText > 0){
+    document.getElementById('t16').innerHTML = '0';
+    document.getElementById('16').value = 0;
+}
+if(document.getElementById('t17').innerText > 0){
+    document.getElementById('t17').innerHTML = '0';
+    document.getElementById('17').value = 0;
+}
+if(document.getElementById('t18').innerText > 0){
+    document.getElementById('t18').innerHTML = '0';
+    document.getElementById('18').value = 0;
+}
+if(document.getElementById('t19').innerText > 0){
+    document.getElementById('t19').innerHTML = '0';
+    document.getElementById('19').value = 0;
+}
+if(document.getElementById('t20').innerText > 0){
+    document.getElementById('t20').innerHTML = '0';
+    document.getElementById('20').value = 0;
+}
+
+}
+function btn(){
+    if(document.getElementById('1').value > 0){
+    localStorage.setItem('stk1',parseInt(localStorage.getItem('stk1')) - document.getElementById('1').value);
+document.getElementById('t1').innerText = parseInt(document.getElementById('p1').innerText) * document.getElementById('1').value;
+       
+  }
+  if(document.getElementById('2').value > 0){
+    localStorage.setItem('stk2',parseInt(localStorage.getItem('stk2')) - document.getElementById('2').value);
+document.getElementById('t2').innerText = parseInt(document.getElementById('p2').innerText) * document.getElementById('2').value;
+       
+  }
+  if(document.getElementById('3').value > 0){
+    localStorage.setItem('stk3',parseInt(localStorage.getItem('stk3')) - document.getElementById('3').value);
+document.getElementById('t3').innerText = parseInt(document.getElementById('p3').innerText) * document.getElementById('3').value;
+       
+  }
+  if(document.getElementById('4').value > 0){
+    localStorage.setItem('stk4',parseInt(localStorage.getItem('stk4')) - document.getElementById('4').value);
+document.getElementById('t4').innerText = parseInt(document.getElementById('p4').innerText) * document.getElementById('4').value;
+       
+  }
+  if(document.getElementById('5').value > 0){
+    localStorage.setItem('stk5',parseInt(localStorage.getItem('stk5')) - document.getElementById('5').value);
+document.getElementById('t5').innerText = parseInt(document.getElementById('p5').innerText) * document.getElementById('5').value;
+       
+  }
+  if(document.getElementById('6').value > 0){
+    localStorage.setItem('stk6',parseInt(localStorage.getItem('stk6')) - document.getElementById('6').value);
+document.getElementById('t6').innerText = parseInt(document.getElementById('p6').innerText) * document.getElementById('6').value;
+       
+  }
+  if(document.getElementById('7').value > 0){
+    localStorage.setItem('stk7',parseInt(localStorage.getItem('stk7')) - document.getElementById('7').value);
+document.getElementById('t7').innerText = parseInt(document.getElementById('p7').innerText) * document.getElementById('7').value;
+       
+  }
+  if(document.getElementById('8').value > 0){
+    localStorage.setItem('stk8',parseInt(localStorage.getItem('stk8')) - document.getElementById('8').value);
+document.getElementById('t8').innerText = parseInt(document.getElementById('p8').innerText) * document.getElementById('8').value;
+       
+  }
+  if(document.getElementById('9').value > 0){
+    localStorage.setItem('stk9',parseInt(localStorage.getItem('stk9')) - document.getElementById('9').value);
+document.getElementById('t9').innerText = parseInt(document.getElementById('p9').innerText) * document.getElementById('9').value;
+       
+  }
+  if(document.getElementById('10').value > 0){
+    localStorage.setItem('stk10',parseInt(localStorage.getItem('stk10')) - document.getElementById('10').value);
+document.getElementById('t10').innerText = parseInt(document.getElementById('p10').innerText) * document.getElementById('10').value;
+       
+  }
+  if(document.getElementById('11').value > 0){
+    localStorage.setItem('stk11',parseInt(localStorage.getItem('stk11')) - document.getElementById('11').value);
+document.getElementById('t11').innerText = parseInt(document.getElementById('p11').innerText) * document.getElementById('11').value;
+       
+  }
+  if(document.getElementById('12').value > 0){
+    localStorage.setItem('stk12',parseInt(localStorage.getItem('stk12')) - document.getElementById('12').value);
+document.getElementById('t12').innerText = parseInt(document.getElementById('p12').innerText) * document.getElementById('12').value;
+       
+  }
+  if(document.getElementById('13').value > 0){
+    localStorage.setItem('stk13',parseInt(localStorage.getItem('stk13')) - document.getElementById('13').value);
+document.getElementById('t13').innerText = parseInt(document.getElementById('p13').innerText) * document.getElementById('13').value;
+       
+  }
+  if(document.getElementById('14').value > 0){
+    localStorage.setItem('stk14',parseInt(localStorage.getItem('stk14')) - document.getElementById('14').value);
+document.getElementById('t14').innerText = parseInt(document.getElementById('p14').innerText) * document.getElementById('14').value;
+       
+  }
+  if(document.getElementById('15').value > 0){
+    localStorage.setItem('stk15',parseInt(localStorage.getItem('stk15')) - document.getElementById('15').value);
+document.getElementById('t15').innerText = parseInt(document.getElementById('p15').innerText) * document.getElementById('15').value;
+       
+  }
+  if(document.getElementById('16').value > 0){
+    localStorage.setItem('stk16',parseInt(localStorage.getItem('stk16')) - document.getElementById('16').value);
+document.getElementById('t16').innerText = parseInt(document.getElementById('p16').innerText) * document.getElementById('16').value;
+       
+  }
+  if(document.getElementById('17').value > 0){
+    localStorage.setItem('stk17',parseInt(localStorage.getItem('stk17')) - document.getElementById('17').value);
+document.getElementById('t17').innerText = parseInt(document.getElementById('p17').innerText) * document.getElementById('17').value;
+       
+  }
+  if(document.getElementById('18').value > 0){
+    localStorage.setItem('stk18',parseInt(localStorage.getItem('stk18')) - document.getElementById('18').value);
+document.getElementById('t18').innerText = parseInt(document.getElementById('p18').innerText) * document.getElementById('18').value;
+       
+  }
+  if(document.getElementById('19').value > 0){
+    localStorage.setItem('stk19',parseInt(localStorage.getItem('stk19')) - document.getElementById('19').value);
+document.getElementById('t19').innerText = parseInt(document.getElementById('p19').innerText) * document.getElementById('19').value;
+       
+  }
+  if(document.getElementById('20').value > 0){
+    localStorage.setItem('stk20',parseInt(localStorage.getItem('stk20')) - document.getElementById('20').value);
+document.getElementById('t20').innerText = parseInt(document.getElementById('p20').innerText) * document.getElementById('20').value;
+       
+  }
+  
+}
+</script>
+<style>
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .item{
+        font-size: 50px;
+        font-weight: bold;
+        padding-left: 10%;
+    }
+    .btn{
+        width: 100;
+        height: 200;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        margin: 50px;
+       
+    }
+    .des{
+        font-weight: bold;
+    }
+    .stle{
+        font-weight: bold;
+    }
+</style>
+
+
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Page</title>
+    <style>
+        body {
+            background-color: rgb(241, 180, 65);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        .stck {
+            color: grey;
+            font-size: 22px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 50px;
+            cursor: pointer;
+        }
+        .btn-container {
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h5>Wide Leg Jeans</h5>
+            <p class="stck">Stocks: </p><label id="stock1">200</label>
+        </div>
+        <div class="card">
+            <h5>Mom Jeans</h5>
+            <p class="stck">Stocks: </p><label id="stock2">200</label>
+        </div>
+        <div class="card">
+            <h5>Middy Straight Jeans</h5>
+            <p class="stck">Stocks: </p><label id="stock3">200</label>
+        </div>
+        <div class="card">
+            <h5>Straight Regular Jeans</h5>
+            <p class="stck">Stocks: </p><label id="stock4">200</label>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="card">
+            <h5>Black T-shirt</h5>
+            <p class="stck">Stocks: </p><label id="stock5">200</label>
+        </div>
+        <div class="card">
+            <h5>Customizable T-Shirt</h5>
+            <p class="stck">Stocks: </p><label id="stock6">200</label>
+        </div>
+        <div class="card">
+            <h5>Strong T-Shirt</h5>
+            <p class="stck">Stocks: </p><label id="stock7">200</label>
+        </div>
+        <div class="card">
+            <h5>Whale T-Shirt</h5>
+            <p class="stck">Stocks: </p><label id="stock8">200</label>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="card">
+            <h5>Secret Garden</h5>
+            <p class="stck">Stocks: </p><label id="stock9">200</label>
+        </div>
+        <div class="card">
+            <h5>Ariana Grande Sweet like candy</h5>
+            <p class="stck">Stocks: </p><label id="stock10">200</label>
+        </div>
+        <div class="card">
+            <h5>Sweet Night Signature</h5>
+            <p class="stck">Stocks: </p><label id="stock11">200</label>
+        </div>
+        <div class="card">
+            <h5>Spicy Floral Perfume</h5>
+            <p class="stck">Stocks: </p><label id="stock12">200</label>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="card">
+            <h5>Bleed Vneck Sando</h5>
+            <p class="stck">Stocks: </p><label id="stock13">200</label>
+        </div>
+        <div class="card">
+            <h5>Sando-PNS-04</h5>
+            <p class="stck">Stocks: </p><label id="stock14">200</label>
+        </div>
+        <div class="card">
+            <h5>Sando Black and White concept</h5>
+            <p class="stck">Stocks: </p><label id="stock15">200</label>
+        </div>
+        <div class="card">
+            <h5>Sando-PNS-16</h5>
+            <p class="stck">Stocks: </p><label id="stock16">200</label>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="card">
+            <h5>Learning walker</h5>
+            <p class="stck">Stocks: </p><label id="stock17">200</label>
+        </div>
+        <div class="card">
+            <h5>Doll</h5>
+            <p class="stck">Stocks: </p><label id="stock18">200</label>
+        </div>
+        <div class="card">
+            <h5>Ball</h5>
+            <p class="stck">Stocks: </p><label id="stock19">200</label>
+        </div>
+        <div class="card">
+            <h5>Teddy Bear</h5>
+            <p class="stck">Stocks: </p><label id="stock20">200</label>
+        </div>
+    </div>
+    <div class="btn-container">
+        <a href="Untitled-1.html"><button class="btn">Back</button></a>
+    </div>
+
+    <script>
+        
+      if(document.getElementById('stock1').innerHTML <= 200){
+
+        if(document.getElementById('stock1').innerHTML > 200){
+
+            localStorage.setItem('stk1','200');
+           document.getElementById('stock1').innerHTML = localStorage.getItem('stk1');        
+        }
+        else{         
+        document.getElementById('stock1').innerHTML = localStorage.getItem('stk1');
+      }
+      }
+
+      
+      if(document.getElementById('stock2').innerHTML <= 200){
+
+if(document.getElementById('stock2').innerHTML > 200){
+  
+    localStorage.setItem('stk2','200');
+   document.getElementById('stock2').innerHTML = localStorage.getItem('stk2'); 
+}
+else{  
+document.getElementById('stock2').innerHTML = localStorage.getItem('stk2');
+}
+}
+      
+    
+if(document.getElementById('stock3').innerHTML <= 200){
+
+if(document.getElementById('stock3').innerHTML > 200){
+  
+    localStorage.setItem('stk3','200');
+   document.getElementById('stock3').innerHTML = localStorage.getItem('stk3'); 
+}
+else{  
+document.getElementById('stock3').innerHTML = localStorage.getItem('stk3');
+}
+}
+    
+if(document.getElementById('stock4').innerHTML <= 200){
+
+if(document.getElementById('stock4').innerHTML > 200){
+  
+    localStorage.setItem('stk4','200');
+   document.getElementById('stock4').innerHTML = localStorage.getItem('stk4'); 
+}
+else{  
+document.getElementById('stock4').innerHTML = localStorage.getItem('stk4');
+}
+}
+
+    
+if(document.getElementById('stock5').innerHTML <= 200){
+
+if(document.getElementById('stock5').innerHTML > 200){
+  
+    localStorage.setItem('stk5','200');
+   document.getElementById('stock5').innerHTML = localStorage.getItem('stk5'); 
+}
+else{  
+document.getElementById('stock5').innerHTML = localStorage.getItem('stk5');
+}
+}
+
+    
+if(document.getElementById('stock6').innerHTML <= 200){
+
+if(document.getElementById('stock6').innerHTML > 200){
+  
+    localStorage.setItem('stk6','200');
+   document.getElementById('stock6').innerHTML = localStorage.getItem('stk6'); 
+}
+else{  
+document.getElementById('stock6').innerHTML = localStorage.getItem('stk6');
+}
+}
+    
+if(document.getElementById('stock7').innerHTML <= 200){
+
+if(document.getElementById('stock7').innerHTML > 200){
+  
+    localStorage.setItem('stk7','200');
+   document.getElementById('stock7').innerHTML = localStorage.getItem('stk7'); 
+}
+else{  
+document.getElementById('stock7').innerHTML = localStorage.getItem('stk7');
+}
+}
+
+    
+if(document.getElementById('stock8').innerHTML <= 200){
+
+if(document.getElementById('stock8').innerHTML > 200){
+  
+    localStorage.setItem('stk8','200');
+   document.getElementById('stock8').innerHTML = localStorage.getItem('stk8'); 
+}
+else{  
+document.getElementById('stock8').innerHTML = localStorage.getItem('stk8');
+}
+}
+
+    
+if(document.getElementById('stock9').innerHTML <= 200){
+
+if(document.getElementById('stock9').innerHTML > 200){
+  
+    localStorage.setItem('stk9','200');
+   document.getElementById('stock9').innerHTML = localStorage.getItem('stk9'); 
+}
+else{  
+document.getElementById('stock9').innerHTML = localStorage.getItem('stk9');
+}
+}
+    
+if(document.getElementById('stock10').innerHTML <= 200){
+
+if(document.getElementById('stock10').innerHTML > 200){
+  
+    localStorage.setItem('stk10','200');
+   document.getElementById('stock10').innerHTML = localStorage.getItem('stk10'); 
+}
+else{  
+document.getElementById('stock10').innerHTML = localStorage.getItem('stk10');
+}
+}
+
+    
+if(document.getElementById('stock11').innerHTML <= 200){
+
+if(document.getElementById('stock11').innerHTML > 200){
+  
+    localStorage.setItem('stk11','200');
+   document.getElementById('stock11').innerHTML = localStorage.getItem('stk11'); 
+}
+else{  
+document.getElementById('stock11').innerHTML = localStorage.getItem('stk11');
+}
+}
+
+    
+if(document.getElementById('stock12').innerHTML <= 200){
+
+if(document.getElementById('stock12').innerHTML > 200){
+  
+    localStorage.setItem('stk12','200');
+   document.getElementById('stock12').innerHTML = localStorage.getItem('stk12'); 
+}
+else{  
+document.getElementById('stock12').innerHTML = localStorage.getItem('stk12');
+}
+}
+
+    
+if(document.getElementById('stock13').innerHTML <= 200){
+
+if(document.getElementById('stock13').innerHTML > 200){
+  
+    localStorage.setItem('stk13','200');
+   document.getElementById('stock13').innerHTML = localStorage.getItem('stk13'); 
+}
+else{  
+document.getElementById('stock13').innerHTML = localStorage.getItem('stk13');
+}
+}
+
+    
+if(document.getElementById('stock14').innerHTML <= 200){
+
+if(document.getElementById('stock14').innerHTML > 200){
+  
+    localStorage.setItem('stk14','200');
+   document.getElementById('stock14').innerHTML = localStorage.getItem('stk14'); 
+}
+else{  
+document.getElementById('stock14').innerHTML = localStorage.getItem('stk14');
+}
+}
+
+    
+if(document.getElementById('stock15').innerHTML <= 200){
+
+if(document.getElementById('stock15').innerHTML > 200){
+  
+    localStorage.setItem('stk15','200');
+   document.getElementById('stock15').innerHTML = localStorage.getItem('stk15'); 
+}
+else{  
+document.getElementById('stock15').innerHTML = localStorage.getItem('stk15');
+}
+}
+
+    
+if(document.getElementById('stock16').innerHTML <= 200){
+
+if(document.getElementById('stock16').innerHTML > 200){
+  
+    localStorage.setItem('stk16','200');
+   document.getElementById('stock16').innerHTML = localStorage.getItem('stk16'); 
+}
+else{  
+document.getElementById('stock16').innerHTML = localStorage.getItem('stk16');
+}
+}
+
+    
+if(document.getElementById('stock17').innerHTML <= 200){
+
+if(document.getElementById('stock17').innerHTML > 200){
+  
+    localStorage.setItem('stk17','200');
+   document.getElementById('stock17').innerHTML = localStorage.getItem('stk17'); 
+}
+else{  
+document.getElementById('stock17').innerHTML = localStorage.getItem('stk17');
+}
+}
+
+    
+if(document.getElementById('stock18').innerHTML <= 200){
+
+if(document.getElementById('stock18').innerHTML > 200){
+  
+    localStorage.setItem('stk18','200');
+   document.getElementById('stock18').innerHTML = localStorage.getItem('stk18'); 
+}
+else{  
+document.getElementById('stock18').innerHTML = localStorage.getItem('stk18');
+}
+}
+
+    
+if(document.getElementById('stock19').innerHTML <= 200){
+
+if(document.getElementById('stock19').innerHTML > 200){
+  
+    localStorage.setItem('stk19','200');
+   document.getElementById('stock19').innerHTML = localStorage.getItem('stk19'); 
+}
+else{  
+document.getElementById('stock19').innerHTML = localStorage.getItem('stk19');
+}
+}
+
+    
+if(document.getElementById('stock20').innerHTML <= 200){
+
+if(document.getElementById('stock20').innerHTML > 200){
+  
+    localStorage.setItem('stk20','200');
+   document.getElementById('stock20').innerHTML = localStorage.getItem('stk20'); 
+}
+else{  
+document.getElementById('stock20').innerHTML = localStorage.getItem('stk20');
+}
+}
+
+    </script>
+</body>
+</html>
